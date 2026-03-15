@@ -1,0 +1,7 @@
+﻿Bidirectional Multi-Scale Implicit Neural Representations for Image Deraining.pdf.part
+C3Net Compound Conditioned ControlNet for Multimodal Content Generation.pdf.part
+GARField Group Anything with Radiance Fields.pdf.part
+GPLD3D Latent Diffusion of 3D Shape Generative Models by Enforcing Geometric and Physical Priors.pdf.part
+Improving Spectral Snapshot Reconstruction with Spectral-Spatial Rectification.pdf.part
+LangSplat 3D Language Gaussian Splatting.pdf.part
+Locally Adaptive Neural 3D Morphable Models.pdf.part
