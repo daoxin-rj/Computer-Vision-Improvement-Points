@@ -8,8 +8,10 @@ Generate only the file contents for these five files:
 5. idea_改进点.yaml
 
 Directory naming note:
-- Keep entry directory names as stable English slugs (lowercase + hyphen).
-- Do not propose Chinese or mixed-language entry directory renaming.
+- Use bilingual entry directory naming:
+  - `<english-slug>__<中文短名>`
+- Keep the English slug prefix stable (lowercase + hyphen).
+- Chinese suffix should be concise and path-safe.
 
 Rules:
 1. Keep field names fixed.

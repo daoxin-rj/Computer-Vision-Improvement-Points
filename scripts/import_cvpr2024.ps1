@@ -20,6 +20,28 @@ function New-Slug {
     return $slug
 }
 
+function New-ZhSuffix {
+    param([string]$Text)
+    if ([string]::IsNullOrWhiteSpace($Text)) {
+        return $null
+    }
+    $value = $Text.Trim()
+    $value = [Regex]::Replace($value, '[<>:"/\\|?*]', '')
+    $value = [Regex]::Replace($value, '\s+', '')
+    $value = [Regex]::Replace($value, '[，。、《》：；“”‘’（）\(\)\[\]\{\}!,\.\?;:+*=~`@#$%^&·…、]', '')
+    $value = $value.Trim(' ', '.', '-', '_')
+    if ([string]::IsNullOrWhiteSpace($value)) {
+        return $null
+    }
+    if ($value.Length -gt 24) {
+        $value = $value.Substring(0, 24).Trim(' ', '.', '-', '_')
+    }
+    if ([string]::IsNullOrWhiteSpace($value)) {
+        return $null
+    }
+    return $value
+}
+
 function Escape-Yaml {
     param([string]$Text)
     if ($null -eq $Text) {
@@ -84,7 +106,17 @@ foreach ($pdf in $pdfFiles) {
         $usedSlugs[$slugBase] = 1
     }
 
-    $entryDir = Join-Path $entriesRoot $slug
+    $zhTitle = $null
+    if ($manifestRow -and $manifestRow.PSObject.Properties.Name -contains "title_zh") {
+        $zhTitle = $manifestRow.title_zh
+    }
+    $zhSuffix = New-ZhSuffix $zhTitle
+    $folderName = $slug
+    if ($zhSuffix) {
+        $folderName = "{0}__{1}" -f $slug, $zhSuffix
+    }
+
+    $entryDir = Join-Path $entriesRoot $folderName
     New-Item -ItemType Directory -Force -Path $entryDir | Out-Null
 
     Copy-Item $pdf.FullName (Join-Path $entryDir "paper.pdf") -Force
@@ -139,7 +171,7 @@ imported_at_utc: "$((Get-Date).ToUniversalTime().ToString("o"))"
     Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "idea_改进点.yaml") -Value $ideaTemplate
 
     $indexRows.Add([pscustomobject]@{
-        slug = $slug
+        slug = $folderName
         title = $title
         source_filename = $pdf.Name
         size_bytes = $pdf.Length
