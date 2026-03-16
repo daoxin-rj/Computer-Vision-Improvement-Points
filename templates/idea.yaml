@@ -1,15 +1,25 @@
 improvement_point: null
+improvement_point_zh: NOT_SPECIFIED
 core_mechanism: null
+core_mechanism_zh: NOT_SPECIFIED
 why_it_works: null
+why_it_works_zh: NOT_SPECIFIED
 applicable_conditions: []
+applicable_conditions_zh: []
 benefits: []
+benefits_zh: []
 tradeoffs: []
+tradeoffs_zh: []
 transferability: null
+transferability_zh: NOT_SPECIFIED
 implementation_hint: null
+implementation_hint_zh: NOT_SPECIFIED
 task_keywords: []
+task_keywords_zh: []
 method_keywords: []
+method_keywords_zh: []
 innovation_keywords: []
+innovation_keywords_zh: []
 evidence_strength: null
 reproducibility_confidence: null
 novelty_confidence: null
-

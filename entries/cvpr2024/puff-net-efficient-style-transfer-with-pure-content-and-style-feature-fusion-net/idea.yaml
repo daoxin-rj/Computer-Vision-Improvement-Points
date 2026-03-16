@@ -14,3 +14,14 @@ reproducibility_confidence: null
 novelty_confidence: null
 
 
+improvement_point_zh: NOT_SPECIFIED
+core_mechanism_zh: NOT_SPECIFIED
+why_it_works_zh: NOT_SPECIFIED
+applicable_conditions_zh: []
+benefits_zh: []
+tradeoffs_zh: []
+transferability_zh: NOT_SPECIFIED
+implementation_hint_zh: NOT_SPECIFIED
+task_keywords_zh: []
+method_keywords_zh: []
+innovation_keywords_zh: []

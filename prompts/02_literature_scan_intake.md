@@ -31,3 +31,5 @@ Final summary:
 2. Most reusable improvement point for each
 3. Overlap risks with current repository direction
 
+Language requirement:
+- Output each narrative field in EN first, then ZH translation.

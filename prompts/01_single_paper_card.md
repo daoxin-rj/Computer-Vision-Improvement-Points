@@ -23,4 +23,7 @@ Constraints:
 - If unspecified, write `NOT_SPECIFIED`.
 - Separate method innovation from engineering optimization.
 - Keep terms normalized for retrieval and dedup.
-
+- Write all narrative fields in bilingual format:
+  - English first
+  - Chinese translation second
+- Keep EN and ZH aligned section-by-section.

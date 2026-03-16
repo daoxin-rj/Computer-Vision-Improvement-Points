@@ -12,6 +12,7 @@ Rules:
 2. Keep style consistent across files.
 3. Use `null` or `NOT_SPECIFIED` for missing information.
 4. Do not output extra explanation outside file contents.
+5. For markdown and text fields, write English first and then provide Chinese translation.
 
 Required field schema:
 
@@ -41,4 +42,3 @@ idea.yaml
 - evidence_strength
 - reproducibility_confidence
 - novelty_confidence
-

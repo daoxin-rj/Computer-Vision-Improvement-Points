@@ -29,4 +29,4 @@ Output format:
 Warnings:
 - Do not mark duplicate by keyword similarity alone.
 - Do not miss same mechanism due to wording differences.
-
+- For narrative explanations, output EN first and then ZH translation.

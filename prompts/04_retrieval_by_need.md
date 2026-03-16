@@ -36,4 +36,4 @@ Output format:
 Constraints:
 - Prefer mechanism-level retrieval over semantic-only matching.
 - If repository coverage is insufficient, state explicit gaps.
-
+- For narrative fields, output EN first and then ZH translation.

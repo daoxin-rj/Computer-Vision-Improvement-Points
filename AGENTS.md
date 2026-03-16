@@ -17,6 +17,12 @@ For each paper, always produce:
 9. Comparison with prior methods
 10. Intake recommendation and duplicate risk
 
+## Language Policy (Required)
+1. Every narrative output must be bilingual: English first, then Chinese translation.
+2. Keep section order aligned between EN and ZH so fields can be compared line-by-line.
+3. Do not add extra claims in Chinese translation that are not present in English source text.
+4. If information is missing, keep both EN and ZH as `NOT_SPECIFIED`.
+
 ## Ground Rules
 1. Evidence first. Do not invent results, formulas, or implementation details.
 2. If details are missing in the paper, mark them as `NOT_SPECIFIED`.
@@ -60,4 +66,3 @@ A paper task is complete only when:
 2. Missing information is marked clearly.
 3. Dedup check result is included.
 4. Output is ready to store directly in `entries/<paper_slug>/`.
-
