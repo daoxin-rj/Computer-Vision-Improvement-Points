@@ -1,6 +1,6 @@
 # L3 Research And Reproduction Guide (EN/ZH)
 
-## 1. Formal Problem Setup
+## 1. Formal Problem Setup / 形式化问题设定
 ### EN
 - Objective: learn a conditional diffusion generator for ERP panorama video \(x_{1:N}\) given text prompt \(y\) and optional motion condition \(c\).
 - Target behavior:
@@ -21,7 +21,7 @@
   - 基于预训练 SD/AnimateDiff 路线进行适配，
   - 重点解决全景域偏移下的可控生成。
 
-## 2. Notation And Data Representation
+## 2. Notation And Data Representation / 符号与数据表示
 ### EN
 - \(x_{1:N}\): video clip with N frames.
 - \(z_{1:N}\): latent representation encoded from \(x_{1:N}\) via pretrained VAE encoder.
@@ -44,7 +44,7 @@
   - 图像空间宽高比约为 2:1，
   - 左右边界必须满足环绕连续性。
 
-## 3. Objective/Formulation
+## 3. Objective/Formulation / 目标函数与形式化表达
 ### EN
 - Base denoising objective (paper Eq. 6 form):
   - train denoiser \(\epsilon_\theta\) to predict diffusion noise from \((z_t, t, text, adapter\_features)\).
@@ -69,7 +69,7 @@
 - 需明确的缺失项：
   - 主文未完整展开所有损失变体的全符号推导与全部实现常数细节。
 
-## 4. Architecture And Information Flow
+## 4. Architecture And Information Flow / 架构与信息流
 ### EN
 - Backbone:
   - SD v1.5 latent diffusion + AnimateDiff temporal modules as pretrained priors.
@@ -98,7 +98,7 @@
 - 增强路径：
   - 在训练/推理策略中引入潜变量旋转与圆周填充以处理连续性问题。
 
-## 5. End-to-End Algorithm
+## 5. End-to-End Algorithm / 端到端算法流程
 ### EN
 - Training algorithm (high level):
   1. Sample panorama clip \(x_{1:N}\) and caption \(y\) from WEB360.
@@ -129,7 +129,7 @@
   3. 在后半程去噪启用圆周填充，改善边界连续性。
   4. 最终通过预训练 VAE 解码得到全景视频。
 
-## 6. Training Recipe
+## 6. Training Recipe / 训练配方
 ### EN
 - Data:
   - WEB360 with about 2,114 text-video pairs,
@@ -170,7 +170,7 @@
 - 算力说明：
   - 主文未完整给出详细硬件配置与总训练耗时。
 
-## 7. Inference Recipe
+## 7. Inference Recipe / 推理配方
 ### EN
 - Inputs:
   - required: text prompt,
@@ -199,7 +199,7 @@
   - 论文实验主要在 512 x 1024 分辨率，
   - 若业务需要可接后续超分模块。
 
-## 8. Ablation Logic
+## 8. Ablation Logic / 消融实验逻辑
 ### EN
 - Hypothesis H1: Better caption granularity improves generation fidelity.
   - Test: remove 360 Text Fusion -> paper reports weaker semantic detail.
@@ -220,7 +220,7 @@
 - 解释：
   - 性能提升来自数据质量、时序建模、几何感知目标设计三方面协同。
 
-## 9. Reproduction Checklist
+## 9. Reproduction Checklist / 复现检查清单
 ### EN
 - [ ] Lock environment and dependency versions (diffusion stack, CUDA, xformers if used).
 - [ ] Verify backbone checkpoint parity (SD v1.5 + matching AnimateDiff motion module).
@@ -249,7 +249,7 @@
 - [ ] 至少与两个基线对比（原始 AnimateDiff、全景 LoRA 版本）。
 - [ ] 记录失败案例，并按接缝/内容分布/运动模式分类。
 
-## 10. Failure Modes And Debug Order
+## 10. Failure Modes And Debug Order / 失败模式与调试顺序
 ### EN
 - Failure mode #1: severe left-right seam discontinuity.
   - Quick test: visualize first/last columns across frames and check temporal seam drift.

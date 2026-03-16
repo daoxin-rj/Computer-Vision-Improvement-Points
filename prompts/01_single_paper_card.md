@@ -49,6 +49,7 @@ Depth requirements (must follow):
   - inference procedure and compute constraints,
   - reproduction risks, debug strategy, and ablation insights.
 - If paper details are missing, keep `NOT_SPECIFIED` and explicitly state what is missing.
+- For markdown outputs, section headings in L1/L2/L3 must use bilingual style: `English / 中文`.
 
 Quality bar:
 - Do not write one-line answers for core sections.

@@ -1,6 +1,6 @@
 # L3 Research And Reproduction Guide (EN/ZH)
 
-## 1. Formal Problem Setup
+## 1. Formal Problem Setup / 形式化问题设定
 ### EN
 - formal objective:
 - optimization target:
@@ -11,7 +11,7 @@
 - 优化目标：
 - 假设与范围：
 
-## 2. Notation And Data Representation
+## 2. Notation And Data Representation / 符号与数据表示
 ### EN
 - key symbols:
 - data tensor/layout conventions:
@@ -22,7 +22,7 @@
 - 数据张量/维度约定：
 - 条件或控制信号表示：
 
-## 3. Objective/Formulation
+## 3. Objective/Formulation / 目标函数与形式化表达
 ### EN
 - core equations/objective terms:
 - regularization or auxiliary loss:
@@ -33,7 +33,7 @@
 - 正则项或辅助损失：
 - 若缺失，请明确写出缺失内容：
 
-## 4. Architecture And Information Flow
+## 4. Architecture And Information Flow / 架构与信息流
 ### EN
 - backbone and frozen/trainable parts:
 - module insertion points:
@@ -44,7 +44,7 @@
 - 模块插入位置：
 - 从输入到输出的特征流：
 
-## 5. End-to-End Algorithm
+## 5. End-to-End Algorithm / 端到端算法流程
 ### EN
 - training algorithm step-by-step:
 - inference algorithm step-by-step:
@@ -55,7 +55,7 @@
 - 推理算法逐步流程：
 - 伪代码级摘要：
 
-## 6. Training Recipe
+## 6. Training Recipe / 训练配方
 ### EN
 - dataset split and filtering:
 - preprocessing pipeline:
@@ -70,7 +70,7 @@
 - 关键超参数：
 - 训练算力预算：
 
-## 7. Inference Recipe
+## 7. Inference Recipe / 推理配方
 ### EN
 - required inputs:
 - sampling or decoding settings:
@@ -83,7 +83,7 @@
 - 可控参数及默认值：
 - 运行时与显存观察：
 
-## 8. Ablation Logic
+## 8. Ablation Logic / 消融实验逻辑
 ### EN
 - component-to-hypothesis mapping:
 - key ablation findings:
@@ -94,7 +94,7 @@
 - 关键消融结论：
 - 负结果的解释：
 
-## 9. Reproduction Checklist
+## 9. Reproduction Checklist / 复现检查清单
 ### EN
 - [ ] environment and dependency lock
 - [ ] data source availability and license check
@@ -115,7 +115,7 @@
 - [ ] 随机种子与评测协议一致性
 - [ ] 定性和定量结果的基本校验
 
-## 10. Failure Modes And Debug Order
+## 10. Failure Modes And Debug Order / 失败模式与调试顺序
 ### EN
 - top failure mode #1 and quick test:
 - top failure mode #2 and quick test:

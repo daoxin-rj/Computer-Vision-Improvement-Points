@@ -1,6 +1,6 @@
 # L2 Master Guide (EN/ZH)
 
-## 1. Task Setup And Evaluation Target
+## 1. Task Setup And Evaluation Target / 任务设定与评估目标
 ### EN
 - task definition:
 - controllable factors:
@@ -11,7 +11,7 @@
 - 可控变量：
 - 评估目标与评测协议：
 
-## 2. Baseline Family And Failure Analysis
+## 2. Baseline Family And Failure Analysis / 基线家族与失败分析
 ### EN
 - representative baseline #1:
 - representative baseline #2:
@@ -22,7 +22,7 @@
 - 代表性基线2：
 - 基线失败点及原因：
 
-## 3. Core Innovation And Positioning
+## 3. Core Innovation And Positioning / 核心创新与方法定位
 ### EN
 - key innovation:
 - what is method-level novelty:
@@ -33,7 +33,7 @@
 - 哪些属于方法创新：
 - 哪些只是工程调优：
 
-## 4. Module-Level Pipeline
+## 4. Module-Level Pipeline / 模块级流程拆解
 ### EN
 - module A (input/output/role):
 - module B (input/output/role):
@@ -46,7 +46,7 @@
 - 模块C（输入/输出/作用）：
 - 端到端信息流：
 
-## 5. Design Rationale (Why Each Module Exists)
+## 5. Design Rationale (Why Each Module Exists) / 设计动机（每个模块为何存在）
 ### EN
 - why module A is necessary:
 - why module B is necessary:
@@ -59,7 +59,7 @@
 - 为什么需要模块C：
 - 去掉某个模块会怎样：
 
-## 6. Training And Inference Details
+## 6. Training And Inference Details / 训练与推理细节
 ### EN
 - training data and preprocessing:
 - objective/loss overview:
@@ -72,7 +72,7 @@
 - 关键超参数：
 - 推理阶段控制项：
 
-## 7. Evidence Mapping (Claim -> Experiment)
+## 7. Evidence Mapping (Claim -> Experiment) / 证据映射（结论 -> 实验）
 ### EN
 - claim #1 -> evidence:
 - claim #2 -> evidence:
@@ -85,7 +85,7 @@
 - 结论3 -> 证据：
 - 证据不足或较弱的结论：
 
-## 8. Transferability And Limits
+## 8. Transferability And Limits / 可迁移性与边界
 ### EN
 - where this method can transfer:
 - required conditions for transfer:

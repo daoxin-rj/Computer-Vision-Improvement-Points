@@ -30,26 +30,26 @@ beginner_L1小白.md must include these sections:
 - 8) Common Confusions And Self-Check Questions / 常见误区与自测问题
 
 master_L2入门.md must include these sections:
-- 1) Task Setup And Evaluation Target
-- 2) Baseline Family And Failure Analysis
-- 3) Core Innovation And Positioning
-- 4) Module-Level Pipeline
-- 5) Design Rationale (Why Each Module Exists)
-- 6) Training And Inference Details
-- 7) Evidence Mapping (Claim -> Experiment)
-- 8) Transferability And Limits
+- 1) Task Setup And Evaluation Target / 任务设定与评估目标
+- 2) Baseline Family And Failure Analysis / 基线家族与失败分析
+- 3) Core Innovation And Positioning / 核心创新与方法定位
+- 4) Module-Level Pipeline / 模块级流程拆解
+- 5) Design Rationale (Why Each Module Exists) / 设计动机（每个模块为何存在）
+- 6) Training And Inference Details / 训练与推理细节
+- 7) Evidence Mapping (Claim -> Experiment) / 证据映射（结论 -> 实验）
+- 8) Transferability And Limits / 可迁移性与边界
 
 research_L3复现.md must include these sections:
-- 1) Formal Problem Setup
-- 2) Notation And Data Representation
-- 3) Objective/Formulation
-- 4) Architecture And Information Flow
-- 5) End-to-End Algorithm
-- 6) Training Recipe
-- 7) Inference Recipe
-- 8) Ablation Logic
-- 9) Reproduction Checklist
-- 10) Failure Modes And Debug Order
+- 1) Formal Problem Setup / 形式化问题设定
+- 2) Notation And Data Representation / 符号与数据表示
+- 3) Objective/Formulation / 目标函数与形式化表达
+- 4) Architecture And Information Flow / 架构与信息流
+- 5) End-to-End Algorithm / 端到端算法流程
+- 6) Training Recipe / 训练配方
+- 7) Inference Recipe / 推理配方
+- 8) Ablation Logic / 消融实验逻辑
+- 9) Reproduction Checklist / 复现检查清单
+- 10) Failure Modes And Debug Order / 失败模式与调试顺序
 
 Depth minimum:
 - L1: at least 8 non-trivial bullets/sentences in EN and mirrored in ZH.

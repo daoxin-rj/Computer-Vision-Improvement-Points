@@ -1,6 +1,6 @@
 # L2 Master Guide (EN/ZH)
 
-## 1. Task Setup And Evaluation Target
+## 1. Task Setup And Evaluation Target / 任务设定与评估目标
 ### EN
 - Task definition: Controllable text-guided **360 panorama video generation** in ERP format, with optional motion conditions.
 - Input/Output:
@@ -21,7 +21,7 @@
   - 跨帧一致性，
   - 全景特有指标：左右连续性、全景内容分布、全景运动模式。
 
-## 2. Baseline Family And Failure Analysis
+## 2. Baseline Family And Failure Analysis / 基线家族与失败分析
 ### EN
 - Representative baseline #1: native AnimateDiff on ERP-like outputs.
 - Representative baseline #2: AnimateDiff + panorama LoRA (LatentLabs360 in the paper comparison).
@@ -38,7 +38,7 @@
   - 全景运动常呈曲线并带有全局耦合，和普通视频的局部运动假设不一致。
   - ERP 需要环绕连续，左右边界在球面上本应相邻。
 
-## 3. Core Innovation And Positioning
+## 3. Core Innovation And Positioning / 核心创新与方法定位
 ### EN
 - Core innovation:
   - a lightweight **360-Adapter** to adapt pretrained T2V diffusion backbones,
@@ -63,7 +63,7 @@
 - 偏工程实现的部分：
   - DDIM 采样与常规 CFG 等设置主要属于常见工程选择。
 
-## 4. Module-Level Pipeline
+## 4. Module-Level Pipeline / 模块级流程拆解
 ### EN
 - Module A: Pretrained backbone
   - Stable Diffusion v1.5 + AnimateDiff motion priors (mostly frozen during adaptation).
@@ -92,7 +92,7 @@
   - WEB360 数据集（约 2,114 对文-视频），
   - 360 Text Fusion：先多视角描述，再融合为更细粒度全景描述。
 
-## 5. Design Rationale (Why Each Module Exists)
+## 5. Design Rationale (Why Each Module Exists) / 设计动机（每个模块为何存在）
 ### EN
 - Why 360-Adapter exists:
   - full finetuning is expensive and can damage pretrained priors,
@@ -117,7 +117,7 @@
 - 为什么要 WEB360 + 360TF：
   - 数据缺乏与描述粗糙是核心瓶颈，更好的文-视频配对能提升文本驱动生成的可靠性。
 
-## 6. Training And Inference Details
+## 6. Training And Inference Details / 训练与推理细节
 ### EN
 - Backbone and settings (paper reported):
   - base: Stable Diffusion v1.5 + Motion Module v14,
@@ -154,7 +154,7 @@
   - 潜变量旋转角：pi/2，
   - 支持仅文本或文本+运动条件生成。
 
-## 7. Evidence Mapping (Claim -> Experiment)
+## 7. Evidence Mapping (Claim -> Experiment) / 证据映射（结论 -> 实验）
 ### EN
 - Claim 1: "Method improves panorama continuity and motion realism."
   - Evidence: Qualitative comparison figure (paper Fig. 6/7) and user-study panorama criteria (end continuity, content distribution, motion pattern).
@@ -177,7 +177,7 @@
   - 论文没有给出覆盖所有对比方法的完整算力效率对比。
   - 主文中对消融统计方差等细节展开有限。
 
-## 8. Transferability And Limits
+## 8. Transferability And Limits / 可迁移性与边界
 ### EN
 - Transferability:
   - high potential for tasks that share ERP geometry and wrap-around continuity constraints,

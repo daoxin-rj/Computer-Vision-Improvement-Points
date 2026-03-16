@@ -23,6 +23,7 @@ For each paper, always produce:
 3. Do not add extra claims in Chinese translation that are not present in English source text.
 4. If information is missing, keep both EN and ZH as `NOT_SPECIFIED`.
 5. Markdown section titles should be bilingual when possible, using `English / 中文` format.
+6. L1/L2/L3 markdown section titles must be bilingual (`English / 中文`), not English-only.
 
 ## Filename Policy (Required)
 1. Repository entry files must use bilingual names:
