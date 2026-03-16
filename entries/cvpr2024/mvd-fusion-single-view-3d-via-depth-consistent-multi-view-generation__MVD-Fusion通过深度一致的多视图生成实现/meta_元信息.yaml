@@ -1,0 +1,20 @@
+English:
+  title: 'MVD-Fusion: Single-view 3D via Depth-consistent Multi-view Generation'
+  authors: &id001 []
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Hu_MVD-Fusion_Single-view_3D_via_Depth-consistent_Multi-view_Generation_CVPR_2024_paper.pdf
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+中文:
+  标题: MVD-Fusion：通过深度一致的多视图生成实现单视图 3D
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Hu_MVD-Fusion_Single-view_3D_via_Depth-consistent_Multi-view_Generation_CVPR_2024_paper.pdf
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED
