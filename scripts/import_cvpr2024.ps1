@@ -57,10 +57,10 @@ $partFiles = Get-ChildItem $SourceDir -File -Filter *.part | Sort-Object Name
 $usedSlugs = @{}
 $indexRows = New-Object System.Collections.Generic.List[object]
 
-$beginnerTemplate = Get-Content -Raw (Join-Path $templateRoot "beginner.md")
-$masterTemplate = Get-Content -Raw (Join-Path $templateRoot "master.md")
-$researchTemplate = Get-Content -Raw (Join-Path $templateRoot "research.md")
-$ideaTemplate = Get-Content -Raw (Join-Path $templateRoot "idea.yaml")
+$beginnerTemplate = Get-Content -Raw (Join-Path $templateRoot "beginner_L1小白.md")
+$masterTemplate = Get-Content -Raw (Join-Path $templateRoot "master_L2入门.md")
+$researchTemplate = Get-Content -Raw (Join-Path $templateRoot "research_L3复现.md")
+$ideaTemplate = Get-Content -Raw (Join-Path $templateRoot "idea_改进点.yaml")
 
 $i = 0
 foreach ($pdf in $pdfFiles) {
@@ -101,15 +101,27 @@ foreach ($pdf in $pdfFiles) {
     }
 
     $metaYaml = @"
-title: "$(Escape-Yaml $title)"
-authors: []
-venue: "CVPR"
-year: 2024
-url: "$(Escape-Yaml $pdfUrl)"
-code_url: null
-field: null
-task: null
-summary_one_line: NOT_SPECIFIED
+English:
+  title: "$(Escape-Yaml $title)"
+  authors: []
+  venue: "CVPR"
+  year: 2024
+  url: "$(Escape-Yaml $pdfUrl)"
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+
+中文:
+  标题: NOT_SPECIFIED
+  作者: []
+  会议: "CVPR"
+  年份: 2024
+  链接: "$(Escape-Yaml $pdfUrl)"
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED
 "@
 
     $sourceYaml = @"
@@ -119,12 +131,12 @@ source_manifest_status: "$(Escape-Yaml $manifestStatus)"
 imported_at_utc: "$((Get-Date).ToUniversalTime().ToString("o"))"
 "@
 
-    Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "meta.yaml") -Value $metaYaml
+    Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "meta_元信息.yaml") -Value $metaYaml
     Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "source.yaml") -Value $sourceYaml
-    Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "beginner.md") -Value $beginnerTemplate
-    Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "master.md") -Value $masterTemplate
-    Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "research.md") -Value $researchTemplate
-    Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "idea.yaml") -Value $ideaTemplate
+    Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "beginner_L1小白.md") -Value $beginnerTemplate
+    Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "master_L2入门.md") -Value $masterTemplate
+    Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "research_L3复现.md") -Value $researchTemplate
+    Set-Content -Encoding UTF8 -Path (Join-Path $entryDir "idea_改进点.yaml") -Value $ideaTemplate
 
     $indexRows.Add([pscustomobject]@{
         slug = $slug

@@ -1,0 +1,77 @@
+English:
+  improvement_point: Domain-adapt standard text-to-video diffusion to equirectangular
+    360 panorama video with a lightweight adapter and panorama-aware training objectives.
+  core_mechanism: A trainable 360-Adapter and 360 enhancement techniques (including
+    latitude-aware loss and ERP boundary continuity handling) are added on top of
+    pretrained T2V backbones; a new captioned WEB360 dataset supports adaptation.
+  why_it_works: The method reduces panoramic domain mismatch while preserving pretrained
+    generation priors, and explicitly addresses geometric distortions and boundary
+    artifacts unique to equirectangular videos.
+  applicable_conditions:
+  - Need controllable 360 panorama video generation from text and motion conditions.
+  - A pretrained text-to-video diffusion model is available.
+  - Training data can include panorama video-text pairs.
+  benefits:
+  - Improves visual coherence and text alignment for panoramic videos.
+  - Lightweight adaptation instead of full model retraining.
+  - Supports controllable generation with motion conditions.
+  tradeoffs:
+  - Requires additional panorama dataset curation and captioning.
+  - Quality depends on adapter training and panorama data coverage.
+  - Detailed compute and latency tradeoffs are not fully disclosed in the abstract.
+  transferability: Medium-to-high for other panoramic diffusion tasks that share ERP
+    geometry and continuity issues.
+  implementation_hint: Freeze most pretrained T2V parameters, train the 360-Adapter
+    with panorama-aware losses, and prioritize ERP boundary consistency during training
+    and evaluation.
+  task_keywords:
+  - text-to-video
+  - panorama video generation
+  - controllable generation
+  method_keywords:
+  - diffusion model adaptation
+  - lightweight adapter
+  - latitude-aware loss
+  - equirectangular projection
+  innovation_keywords:
+  - 360-Adapter
+  - WEB360 dataset
+  - panorama-specific enhancement techniques
+  evidence_strength: medium
+  reproducibility_confidence: medium
+  novelty_confidence: medium
+中文:
+  改进点: 通过轻量适配器与全景感知训练目标，将标准文生视频扩散模型迁移到等距矩形 360 全景视频生成。
+  核心机制: 在预训练文生视频骨干上引入可训练 360-Adapter 与 360 增强技术（含纬度感知损失与 ERP 边界连续性处理），并使用带文本标注的 WEB360
+    数据集进行适配训练。
+  有效原因: 该方法在保留预训练生成先验的同时缓解全景域偏移，并显式处理等距矩形视频特有的几何畸变与边界伪影。
+  适用条件:
+  - 需要从文本与运动条件生成可控 360 全景视频。
+  - 已有可用的预训练文生视频扩散模型。
+  - 训练数据可包含全景视频-文本对。
+  收益:
+  - 提升全景视频的视觉连贯性与文本对齐。
+  - 采用轻量适配，避免全量重训。
+  - 支持基于运动条件的可控生成。
+  代价:
+  - 需要额外构建与标注全景数据集。
+  - 效果受适配器训练质量与数据覆盖度影响。
+  - 摘要中未完整给出计算与时延代价细节。
+  可迁移性: 对同样受 ERP 几何与边界连续性影响的全景扩散任务具有中高可迁移性。
+  实现提示: 冻结大部分预训练参数，仅训练 360-Adapter，并在训练与评测中重点约束 ERP 边界一致性。
+  任务关键词:
+  - 文生视频
+  - 全景视频生成
+  - 可控生成
+  方法关键词:
+  - 扩散模型适配
+  - 轻量适配器
+  - 纬度感知损失
+  - 等距矩形投影
+  创新关键词:
+  - 360-Adapter
+  - WEB360 数据集
+  - 全景特定增强策略
+  证据强度: medium
+  可复现性置信度: medium
+  创新性置信度: medium

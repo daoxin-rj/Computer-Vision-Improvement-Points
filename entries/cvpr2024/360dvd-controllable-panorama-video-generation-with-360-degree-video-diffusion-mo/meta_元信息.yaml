@@ -1,0 +1,28 @@
+English:
+  title: '360DVD: Controllable Panorama Video Generation with 360-Degree Video Diffusion
+    Model'
+  authors: &id001
+  - Qian Wang
+  - Weiqi Li
+  - Chong Mou
+  - Xinhua Cheng
+  - Jian Zhang
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_360DVD_Controllable_Panorama_Video_Generation_with_360-Degree_Video_Diffusion_Model_CVPR_2024_paper.pdf
+  code_url: https://akaneqwq.github.io/360DVD/
+  field: Generative Vision
+  task: Text-to-Panorama-Video Generation
+  summary_one_line: A lightweight 360-Adapter and ERP-specific enhancement losses
+    adapt pretrained text-to-video diffusion models to controllable 360 panorama video
+    generation.
+中文:
+  标题: 360DVD：可控的 360 度全景视频扩散生成模型
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_360DVD_Controllable_Panorama_Video_Generation_with_360-Degree_Video_Diffusion_Model_CVPR_2024_paper.pdf
+  代码链接: https://akaneqwq.github.io/360DVD/
+  领域: 生成式视觉
+  任务: 文本到全景视频生成
+  一句话总结: 通过轻量 360-Adapter 与 ERP 特定增强损失，将预训练文生视频扩散模型迁移到可控的 360 全景视频生成。

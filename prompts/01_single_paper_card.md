@@ -27,3 +27,7 @@ Constraints:
   - English first
   - Chinese translation second
 - Keep EN and ZH aligned section-by-section.
+- For YAML outputs:
+  - use `English` and `中文` top-level sections
+  - use Chinese key names in `中文` section (for example `收益`)
+  - do not use suffix keys like `benefits_zh`

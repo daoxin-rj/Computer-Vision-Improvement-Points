@@ -23,6 +23,21 @@ For each paper, always produce:
 3. Do not add extra claims in Chinese translation that are not present in English source text.
 4. If information is missing, keep both EN and ZH as `NOT_SPECIFIED`.
 
+## Filename Policy (Required)
+1. Repository entry files must use bilingual names:
+   - `meta_元信息.yaml`
+   - `idea_改进点.yaml`
+   - `beginner_L1小白.md`
+   - `master_L2入门.md`
+   - `research_L3复现.md`
+2. Do not create new entries with legacy filenames (`meta.yaml`, `idea.yaml`, `beginner.md`, `master.md`, `research.md`).
+
+## Schema Policy (Required)
+1. YAML files must use sectioned bilingual schema:
+   - `English:` section with English keys.
+   - `中文:` section with Chinese keys.
+2. Chinese keys must be native Chinese labels (for example `收益`), not suffix-style keys (for example `benefits_zh`).
+
 ## Ground Rules
 1. Evidence first. Do not invent results, formulas, or implementation details.
 2. If details are missing in the paper, mark them as `NOT_SPECIFIED`.
@@ -48,11 +63,11 @@ For each paper, always produce:
 - `templates/` standard output templates
 - `prompts/` task-level prompt files
 - `entries/<paper_slug>/` finalized paper assets
-  - `meta.yaml`
-  - `beginner.md`
-  - `master.md`
-  - `research.md`
-  - `idea.yaml`
+  - `meta_元信息.yaml`
+  - `beginner_L1小白.md`
+  - `master_L2入门.md`
+  - `research_L3复现.md`
+  - `idea_改进点.yaml`
 
 ## Prohibited Behavior
 1. No fabricated citations, metrics, or claims.
