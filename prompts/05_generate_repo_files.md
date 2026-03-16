@@ -20,14 +20,14 @@ Rules:
 Mandatory markdown depth structure:
 
 beginner_L1小白.md must include these sections:
-- 1) Background You Need First
-- 2) Problem In One Sentence
-- 3) Why Existing Methods Struggle
-- 4) Method Walkthrough (Step-by-Step)
-- 5) Why This Design Makes Sense
-- 6) Mini Example Or Thought Experiment
-- 7) Learning Path For This Week
-- 8) Common Confusions And Self-Check Questions
+- 1) Background You Need First / 你需要先知道的背景
+- 2) Problem In One Sentence / 一句话问题定义
+- 3) Why Existing Methods Struggle / 现有方法为什么会失败
+- 4) Method Walkthrough (Step-by-Step) / 方法流程（分步讲解）
+- 5) Why This Design Makes Sense / 为什么这个设计合理
+- 6) Mini Example Or Thought Experiment / 小例子或思维实验
+- 7) Learning Path For This Week / 本周学习路径
+- 8) Common Confusions And Self-Check Questions / 常见误区与自测问题
 
 master_L2入门.md must include these sections:
 - 1) Task Setup And Evaluation Target

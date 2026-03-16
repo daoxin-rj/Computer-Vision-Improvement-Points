@@ -1,6 +1,6 @@
 # L1 Beginner Guide (EN/ZH)
 
-## 1. Background You Need First
+## 1. Background You Need First / 你需要先知道的背景
 ### EN
 - domain context:
 - real-world scenario:
@@ -11,7 +11,7 @@
 - 真实应用场景：
 - 为什么这个问题现在重要：
 
-## 2. Problem In One Sentence
+## 2. Problem In One Sentence / 一句话问题定义
 ### EN
 - plain one-line problem statement:
 - input and output in simple words:
@@ -20,7 +20,7 @@
 - 用一句话说明问题：
 - 用通俗语言说明输入和输出：
 
-## 3. Why Existing Methods Struggle
+## 3. Why Existing Methods Struggle / 现有方法为什么会失败
 ### EN
 - old way #1 and where it breaks:
 - old way #2 and where it breaks:
@@ -31,7 +31,7 @@
 - 旧方法2及其失败点：
 - 方法失败时用户会看到什么问题：
 
-## 4. Method Walkthrough (Step-by-Step)
+## 4. Method Walkthrough (Step-by-Step) / 方法流程（分步讲解）
 ### EN
 - step 1 (what happens):
 - step 2 (what happens):
@@ -44,7 +44,7 @@
 - 第3步（做什么）：
 - 第4步（做什么）：
 
-## 5. Why This Design Makes Sense
+## 5. Why This Design Makes Sense / 为什么这个设计合理
 ### EN
 - design choice A -> reason:
 - design choice B -> reason:
@@ -55,7 +55,7 @@
 - 设计选择B -> 原因：
 - 设计选择C -> 原因：
 
-## 6. Mini Example Or Thought Experiment
+## 6. Mini Example Or Thought Experiment / 小例子或思维实验
 ### EN
 - simple example prompt/input:
 - what old method likely does:
@@ -68,7 +68,7 @@
 - 本文方法改变了什么：
 - 预期输出差异：
 
-## 7. Learning Path For This Week
+## 7. Learning Path For This Week / 本周学习路径
 ### EN
 - day 1: prerequisite you should learn first:
 - day 2-3: what to read in this paper:
@@ -81,7 +81,7 @@
 - 第4-5天：做什么小实验：
 - 第6-7天：如何总结你的收获：
 
-## 8. Common Confusions And Self-Check Questions
+## 8. Common Confusions And Self-Check Questions / 常见误区与自测问题
 ### EN
 - confusion #1 and correction:
 - confusion #2 and correction:

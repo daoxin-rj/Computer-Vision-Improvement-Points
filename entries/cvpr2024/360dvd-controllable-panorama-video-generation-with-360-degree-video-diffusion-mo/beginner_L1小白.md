@@ -1,6 +1,6 @@
 # L1 Beginner Guide (EN/ZH)
 
-## 1. Background You Need First
+## 1. Background You Need First / 你需要先知道的背景
 ### EN
 - Domain context: This paper is about **text-to-video generation**, but the target is a special format: **360-degree panorama video** (usually stored as ERP, equirectangular projection).
 - Real-world scenario: 360 videos are used in VR tourism, immersive education, virtual events, and digital content production.
@@ -11,7 +11,7 @@
 - 真实应用场景：360 视频常用于 VR 旅游、沉浸式教育、虚拟活动和内容生产。
 - 为什么这个问题现在重要：真实拍摄 360 视频成本很高（设备、采集、后期都贵），如果能从文本直接生成，就能显著降低成本并扩大内容规模。
 
-## 2. Problem In One Sentence
+## 2. Problem In One Sentence / 一句话问题定义
 ### EN
 - One-line problem: How to generate controllable, high-quality 360 panorama videos from text prompts (and optional motion guidance).
 - Input/output in simple words: Input is a sentence (and optionally a motion hint such as optical flow), output is a coherent 360 video clip.
@@ -20,7 +20,7 @@
 - 一句话问题：如何根据文本提示（可选再加运动控制）生成可控且高质量的 360 全景视频。
 - 通俗输入输出：输入是一句文本（可选运动提示，如光流），输出是一段连贯的全景视频。
 
-## 3. Why Existing Methods Struggle
+## 3. Why Existing Methods Struggle / 现有方法为什么会失败
 ### EN
 - Old way #1: Directly use normal text-to-video models (trained on perspective videos). Problem: they do not understand panorama geometry well.
 - Old way #2: Add panorama image tricks only. Problem: still weak for temporal consistency and panorama-specific motion patterns in videos.
@@ -37,7 +37,7 @@
   - 左右边界不连续（接缝明显），
   - 在 ERP 格式下运动轨迹不自然。
 
-## 4. Method Walkthrough (Step-by-Step)
+## 4. Method Walkthrough (Step-by-Step) / 方法流程（分步讲解）
 ### EN
 - Step 1: Start from strong pretrained models (Stable Diffusion + AnimateDiff style pipeline) instead of training everything from scratch.
 - Step 2: Add a lightweight **360-Adapter** to inject panorama-related motion/condition features into multiple encoder scales of the denoising U-Net.
@@ -60,7 +60,7 @@
   - 后半程圆周填充（改善像素级接缝质量）。
 - 第6步：推理时用户可以只给文本，也可以给文本 + 运动条件实现可控生成。
 
-## 5. Why This Design Makes Sense
+## 5. Why This Design Makes Sense / 为什么这个设计合理
 ### EN
 - Design choice A (lightweight adapter): keeps pretrained generation priors, so training is cheaper and more stable than full retraining.
 - Design choice B (panorama-aware losses/operations): directly targets panorama-specific pain points (ERP distortion + seam continuity), not generic video issues only.
@@ -71,7 +71,7 @@
 - 设计选择B（全景感知损失与操作）：直接对准全景特有痛点（ERP 畸变 + 边界连续性），不只是泛化的视频问题。
 - 设计选择C（新数据集 + 更细描述）：没有高质量配对数据和细粒度描述，模型就学不到稳定的“文本 -> 全景视频”映射。
 
-## 6. Mini Example Or Thought Experiment
+## 6. Mini Example Or Thought Experiment / 小例子或思维实验
 ### EN
 - Example prompt: "A city under cloudy sky, with a car driving down the street."
 - What standard T2V may do: generate a normal-view video with weak panorama structure; edge continuity is often poor.
@@ -84,7 +84,7 @@
 - 360DVD 的改变：通过适配器和增强模块，让内容分布和运动更符合全景视频，同时保持文本对齐。
 - 预期差异：左右连续性更好，场景覆盖更广，ERP 空间里的运动更合理。
 
-## 7. Learning Path For This Week
+## 7. Learning Path For This Week / 本周学习路径
 ### EN
 - Day 1: Learn basics of diffusion and why AnimateDiff can extend T2I to T2V.
 - Day 2-3: Read this paper in order: Abstract -> Introduction -> Method 3.3/3.4 -> Experiment 4.3/4.4.
@@ -99,7 +99,7 @@
 - 第6天：观察失败案例（接缝伪影、视野过窄、运动不合理），并对应到具体模块。
 - 第7天：写一页自己的总结表：问题是什么、设计怎么改、效果提升在哪里。
 
-## 8. Common Confusions And Self-Check Questions
+## 8. Common Confusions And Self-Check Questions / 常见误区与自测问题
 ### EN
 - Confusion #1: "Is this just adding a new dataset?" Correction: No. Core changes include adapter design + panorama-specific enhancement + dataset/caption pipeline.
 - Confusion #2: "If I train longer, baseline should solve it." Correction: Domain mismatch (geometry/motion/seam) is structural, not just training-time shortage.
