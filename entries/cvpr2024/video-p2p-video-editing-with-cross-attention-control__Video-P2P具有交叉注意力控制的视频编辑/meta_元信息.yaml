@@ -1,0 +1,20 @@
+English:
+  title: 'Video-P2P: Video Editing with Cross-attention Control'
+  authors: &id001 []
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Liu_Video-P2P_Video_Editing_with_Cross-attention_Control_CVPR_2024_paper.pdf
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+中文:
+  标题: Video-P2P：具有交叉注意力控制的视频编辑
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Liu_Video-P2P_Video_Editing_with_Cross-attention_Control_CVPR_2024_paper.pdf
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED
