@@ -1,0 +1,30 @@
+English:
+  improvement_point: null
+  core_mechanism: null
+  why_it_works: null
+  applicable_conditions: []
+  benefits: []
+  tradeoffs: []
+  transferability: null
+  implementation_hint: null
+  task_keywords: []
+  method_keywords: []
+  innovation_keywords: []
+  evidence_strength: null
+  reproducibility_confidence: null
+  novelty_confidence: null
+中文:
+  改进点: NOT_SPECIFIED
+  核心机制: NOT_SPECIFIED
+  有效原因: NOT_SPECIFIED
+  适用条件: []
+  收益: []
+  代价: []
+  可迁移性: NOT_SPECIFIED
+  实现提示: NOT_SPECIFIED
+  任务关键词: []
+  方法关键词: []
+  创新关键词: []
+  证据强度: null
+  可复现性置信度: null
+  创新性置信度: null

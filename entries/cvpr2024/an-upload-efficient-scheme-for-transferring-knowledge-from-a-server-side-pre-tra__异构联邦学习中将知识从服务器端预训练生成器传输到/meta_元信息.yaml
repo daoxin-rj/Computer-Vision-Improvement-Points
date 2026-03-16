@@ -1,0 +1,21 @@
+English:
+  title: An Upload-Efficient Scheme for Transferring Knowledge From a Server-Side
+    Pre-trained Generator to Clients in Heterogeneous Federated Learning
+  authors: &id001 []
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_An_Upload-Efficient_Scheme_for_Transferring_Knowledge_From_a_Server-Side_Pre-trained_CVPR_2024_paper.pdf
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+中文:
+  标题: 异构联邦学习中将知识从服务器端预训练生成器传输到客户端的高效上传方案
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_An_Upload-Efficient_Scheme_for_Transferring_Knowledge_From_a_Server-Side_Pre-trained_CVPR_2024_paper.pdf
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED
