@@ -1,0 +1,20 @@
+English:
+  title: 'CosalPure: Learning Concept from Group Images for Robust Co-Saliency Detection'
+  authors: &id001 []
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Zhu_CosalPure_Learning_Concept_from_Group_Images_for_Robust_Co-Saliency_Detection_CVPR_2024_paper.pdf
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+中文:
+  标题: CosalPure：从组图像中学习概念以实现稳健的协同显着性检测
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Zhu_CosalPure_Learning_Concept_from_Group_Images_for_Robust_Co-Saliency_Detection_CVPR_2024_paper.pdf
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED
