@@ -1,0 +1,20 @@
+English:
+  title: 'LAN: Learning to Adapt Noise for Image Denoising'
+  authors: &id001 []
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Kim_LAN_Learning_to_Adapt_Noise_for_Image_Denoising_CVPR_2024_paper.pdf
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+中文:
+  标题: LAN：学习适应噪声以进行图像去噪
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Kim_LAN_Learning_to_Adapt_Noise_for_Image_Denoising_CVPR_2024_paper.pdf
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED
