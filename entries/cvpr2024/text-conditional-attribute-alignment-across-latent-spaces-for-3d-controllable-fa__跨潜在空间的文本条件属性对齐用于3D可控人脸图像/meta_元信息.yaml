@@ -1,0 +1,21 @@
+English:
+  title: Text-conditional Attribute Alignment across Latent Spaces for 3D Controllable
+    Face Image Synthesis
+  authors: &id001 []
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_Text-conditional_Attribute_Alignment_across_Latent_Spaces_for_3D_Controllable_Face_CVPR_2024_paper.pdf
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+中文:
+  标题: 跨潜在空间的文本条件属性对齐，用于 3D 可控人脸图像合成
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_Text-conditional_Attribute_Alignment_across_Latent_Spaces_for_3D_Controllable_Face_CVPR_2024_paper.pdf
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED
