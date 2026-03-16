@@ -26,13 +26,16 @@ For each paper, always produce:
 6. L1/L2/L3 markdown section titles must be bilingual (`English / 中文`), not English-only.
 
 ## Filename Policy (Required)
-1. Repository entry files must use bilingual names:
+1. Entry directory names must stay stable English slugs (lowercase + hyphen), for example:
+   - `entries/cvpr2024/360dvd-controllable-panorama-video-generation-with-360-degree-video-diffusion-mo/`
+2. Do not rename entry directories to Chinese or mixed-language names.
+3. Repository entry files must use bilingual names:
    - `meta_元信息.yaml`
    - `idea_改进点.yaml`
    - `beginner_L1小白.md`
    - `master_L2入门.md`
    - `research_L3复现.md`
-2. Do not create new entries with legacy filenames (`meta.yaml`, `idea.yaml`, `beginner.md`, `master.md`, `research.md`).
+4. Do not create new entries with legacy filenames (`meta.yaml`, `idea.yaml`, `beginner.md`, `master.md`, `research.md`).
 
 ## Schema Policy (Required)
 1. YAML files must use sectioned bilingual schema:
