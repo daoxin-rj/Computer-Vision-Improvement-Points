@@ -15,6 +15,46 @@ Rules:
 5. For markdown and text fields, write English first and then provide Chinese translation.
 6. For YAML files, use top-level sections `English` and `中文`.
 7. Chinese section must use Chinese key names instead of `_zh` suffix keys.
+8. L1/L2/L3 must be detailed enough for learning and implementation planning; avoid short abstract-like outputs.
+
+Mandatory markdown depth structure:
+
+beginner_L1小白.md must include these sections:
+- 1) Background You Need First
+- 2) Problem In One Sentence
+- 3) Why Existing Methods Struggle
+- 4) Method Walkthrough (Step-by-Step)
+- 5) Why This Design Makes Sense
+- 6) Mini Example Or Thought Experiment
+- 7) Learning Path For This Week
+- 8) Common Confusions And Self-Check Questions
+
+master_L2入门.md must include these sections:
+- 1) Task Setup And Evaluation Target
+- 2) Baseline Family And Failure Analysis
+- 3) Core Innovation And Positioning
+- 4) Module-Level Pipeline
+- 5) Design Rationale (Why Each Module Exists)
+- 6) Training And Inference Details
+- 7) Evidence Mapping (Claim -> Experiment)
+- 8) Transferability And Limits
+
+research_L3复现.md must include these sections:
+- 1) Formal Problem Setup
+- 2) Notation And Data Representation
+- 3) Objective/Formulation
+- 4) Architecture And Information Flow
+- 5) End-to-End Algorithm
+- 6) Training Recipe
+- 7) Inference Recipe
+- 8) Ablation Logic
+- 9) Reproduction Checklist
+- 10) Failure Modes And Debug Order
+
+Depth minimum:
+- L1: at least 8 non-trivial bullets/sentences in EN and mirrored in ZH.
+- L2: include explicit claim-to-evidence mapping (at least 3 mappings).
+- L3: include explicit reproduction checklist (at least 8 checklist items).
 
 Required field schema:
 

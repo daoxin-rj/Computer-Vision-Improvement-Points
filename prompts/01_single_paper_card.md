@@ -31,3 +31,26 @@ Constraints:
   - use `English` and `中文` top-level sections
   - use Chinese key names in `中文` section (for example `收益`)
   - do not use suffix keys like `benefits_zh`
+
+Depth requirements (must follow):
+- L1 must teach a beginner, not just summarize:
+  - include problem background/context,
+  - explain method flow in plain language,
+  - explain why this design is chosen,
+  - include "what to do next" learning guidance.
+- L2 must explain mechanism and evidence:
+  - task setup, assumptions, baselines,
+  - module interaction and data/control flow,
+  - why each component contributes,
+  - which experiments support which claims.
+- L3 must support real reproduction planning:
+  - explicit formulation/notation (if available),
+  - algorithmic pipeline and training recipe,
+  - inference procedure and compute constraints,
+  - reproduction risks, debug strategy, and ablation insights.
+- If paper details are missing, keep `NOT_SPECIFIED` and explicitly state what is missing.
+
+Quality bar:
+- Do not write one-line answers for core sections.
+- Do not use vague praise (for example "great performance") without evidence anchor.
+- Each major section should contain concrete, actionable details.

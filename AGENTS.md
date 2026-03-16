@@ -38,6 +38,33 @@ For each paper, always produce:
    - `中文:` section with Chinese keys.
 2. Chinese keys must be native Chinese labels (for example `收益`), not suffix-style keys (for example `benefits_zh`).
 
+## Depth Policy (Required)
+1. L1/L2/L3 are teaching artifacts, not short abstracts.
+2. Every level must answer three core questions explicitly:
+   - What problem are we solving and why now?
+   - How does the method work step by step?
+   - Why this design is reasonable vs alternatives?
+3. L1 must include:
+   - beginner background and context,
+   - plain-language method walkthrough,
+   - concrete learning actions (what to read/run next),
+   - common misunderstandings and self-check questions.
+4. L2 must include:
+   - formal task setup and baseline assumptions,
+   - module-level interaction and training/inference pipeline,
+   - mechanism-level explanation for each key component,
+   - experiment-to-claim mapping (what evidence supports which claim).
+5. L3 must include:
+   - reproducible formulation and notation,
+   - implementable algorithm and training recipe,
+   - ablation logic and failure mode analysis,
+   - reproduction checklist, risk list, and debug priorities.
+6. Avoid shallow text:
+   - no single-sentence answers for core sections,
+   - no unexplained jargon,
+   - no claim without evidence anchor from the paper.
+7. If the paper lacks detail, write `NOT_SPECIFIED` and explain what artifact is missing (equations, hyperparameters, code, etc.).
+
 ## Ground Rules
 1. Evidence first. Do not invent results, formulas, or implementation details.
 2. If details are missing in the paper, mark them as `NOT_SPECIFIED`.
@@ -53,6 +80,9 @@ For each paper, always produce:
 4. Are keywords normalized and searchable?
 5. Is there overlap with existing entries?
 6. Are applicable conditions and costs explicitly stated?
+7. Does L1 tell a beginner what to do next after reading?
+8. Does L2 explain why each module exists instead of listing names only?
+9. Does L3 contain enough implementation detail for a reproduction attempt?
 
 ## Confidence Labels
 - `evidence_strength`: low | medium | high
