@@ -1,13 +1,20 @@
-﻿title: "3D Facial Expressions through Analysis-by-Neural-Synthesis"
-authors: []
+title: "3D Facial Expressions through Analysis-by-Neural-Synthesis"
+title_zh: "通过分析-神经合成实现三维面部表情重建"
+authors:
+  - "George Retsinas"
+  - "Panagiotis P. Filntisis"
+  - "Radek Daněček"
+  - "Victoria F. Abrevaya"
+  - "Anastasios Roussos"
+  - "Timo Bolkart"
+  - "Petros Maragos"
 venue: "CVPR"
 year: 2024
 url: "https://openaccess.thecvf.com/content/CVPR2024/papers/Retsinas_3D_Facial_Expressions_through_Analysis-by-Neural-Synthesis_CVPR_2024_paper.pdf"
-code_url: null
-field: null
-task: null
-summary_one_line: NOT_SPECIFIED
-title_zh: NOT_SPECIFIED
-field_zh: null
-task_zh: null
-summary_one_line_zh: NOT_SPECIFIED
+code_url: "https://georgeretsi.github.io/smirk/"
+field: "3D Face Reconstruction"
+field_zh: "三维人脸重建"
+task: "Expression-Faithful Monocular 3D Face Reconstruction"
+task_zh: "高保真表情的单目三维人脸重建"
+summary_one_line: "SMIRK replaces differentiable-rendering supervision with analysis-by-neural-synthesis and adds cycle-based expression consistency to recover subtle and asymmetric facial expressions."
+summary_one_line_zh: "SMIRK 用分析-神经合成监督替代传统可微渲染监督，并加入循环式表情一致性约束，以更好重建细微和非对称表情。"

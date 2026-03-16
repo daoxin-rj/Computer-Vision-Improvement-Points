@@ -1,33 +1,37 @@
-﻿# L1 Beginner Version (EN/ZH)
+# L1 Beginner Version (EN/ZH)
 
 ## 1. Problem
 ### EN
-Use plain language to explain what problem this paper solves.
+This paper tries to generate 360-degree panorama videos from text prompts, because real 360 video capture is expensive and hard to scale.
 
 ### ZH
-璇风敤閫氫織璇█璇存槑杩欑瘒璁烘枃瑕佽В鍐充粈涔堥棶棰樸€?
+这篇论文要解决的是：根据文本提示直接生成 360 度全景视频，因为真实全景视频拍摄成本高、难以规模化。
+
 ## 2. Why Old Methods Struggle
 ### EN
-Describe the key limitation of earlier approaches without heavy jargon.
+Regular text-to-video models are trained for normal perspective videos, not panoramic videos. They often fail on panoramic geometry and boundary continuity.
 
 ### ZH
-璇疯鏄庢棫鏂规硶鐨勫叧閿笉瓒筹紝閬垮厤杩囧鏈銆?
+常规文生视频模型主要面向普通视角视频，不是为全景视频设计，容易在全景几何和边界连续性上出错。
+
 ## 3. New Idea
 ### EN
-Explain the main new idea in simple words.
+The authors add a lightweight 360-Adapter and panorama-specific enhancement losses to a pretrained text-to-video diffusion model, then train on a new panorama video-text dataset (WEB360).
 
 ### ZH
-璇风敤绠€鍗曡瑷€瑙ｉ噴璁烘枃鐨勬牳蹇冩柊鎯虫硶銆?
+作者在预训练文生视频扩散模型上加入轻量 360-Adapter 和全景专用增强损失，再用新的全景视频-文本数据集 WEB360 进行训练。
+
 ## 4. Why It May Work Better
 ### EN
-Give an intuitive reason for expected gains.
+It reuses strong pretrained generation ability, while adding only the extra components needed for panoramic structure and continuity.
 
 ### ZH
-缁欏嚭璇ユ柟娉曞彲鑳芥洿鏈夋晥鐨勭洿瑙傚師鍥犮€?
+该方法保留了预训练模型的强生成能力，同时只增加解决全景结构与连续性问题所需的关键模块。
+
 ## 5. Analogy
 ### EN
-Provide one concrete analogy for non-experts.
+It is like adapting a normal camera video editor to work with globe-style videos by adding a special panoramic correction plugin instead of rebuilding the whole editor.
 
 ### ZH
-缁欏嚭涓€涓€傚悎鍒濆鑰呯悊瑙ｇ殑绫绘瘮銆?
+这就像给普通视频编辑器加一个“全景校正插件”，让它能处理地球仪式全景视频，而不是从零重做整个编辑器。
 

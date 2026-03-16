@@ -1,13 +1,18 @@
-﻿title: "3D Face Reconstruction with the Geometric Guidance of Facial Part Segmentation"
-authors: []
+title: "3D Face Reconstruction with the Geometric Guidance of Facial Part Segmentation"
+title_zh: "利用面部分割几何引导的 3D 人脸重建"
+authors:
+  - "Zidu Wang"
+  - "Xiangyu Zhu"
+  - "Tianshuo Zhang"
+  - "Baiqin Wang"
+  - "Zhen Lei"
 venue: "CVPR"
 year: 2024
 url: "https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_3D_Face_Reconstruction_with_the_Geometric_Guidance_of_Facial_Part_CVPR_2024_paper.pdf"
-code_url: null
-field: null
-task: null
-summary_one_line: NOT_SPECIFIED
-title_zh: NOT_SPECIFIED
-field_zh: null
-task_zh: null
-summary_one_line_zh: NOT_SPECIFIED
+code_url: "https://github.com/wang-zidu/3DDFA-V3"
+field: "3D Face Reconstruction"
+field_zh: "三维人脸重建"
+task: "Monocular 3D Face Reconstruction"
+task_zh: "单目三维人脸重建"
+summary_one_line: "The paper introduces Part Re-projection Distance Loss (PRDL), which uses facial part segmentation geometry to stabilize and improve 3D face reconstruction, especially under extreme expressions."
+summary_one_line_zh: "论文提出 Part Re-projection Distance Loss（PRDL），利用面部分割几何信息稳定并提升三维人脸重建，尤其在极端表情下表现更好。"
