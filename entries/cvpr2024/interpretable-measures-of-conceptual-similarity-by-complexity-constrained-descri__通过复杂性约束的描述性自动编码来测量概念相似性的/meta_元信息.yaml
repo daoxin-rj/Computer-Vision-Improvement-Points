@@ -1,0 +1,21 @@
+English:
+  title: Interpretable Measures of Conceptual Similarity by Complexity-Constrained
+    Descriptive Auto-Encoding
+  authors: &id001 []
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Achille_Interpretable_Measures_of_Conceptual_Similarity_by_Complexity-Constrained_Descriptive_Auto-Encoding_CVPR_2024_paper.pdf
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+中文:
+  标题: 通过复杂性约束的描述性自动编码来测量概念相似性的可解释性
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Achille_Interpretable_Measures_of_Conceptual_Similarity_by_Complexity-Constrained_Descriptive_Auto-Encoding_CVPR_2024_paper.pdf
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED
