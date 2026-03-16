@@ -1,0 +1,20 @@
+English:
+  title: Dual-Consistency Model Inversion for Non-Exemplar Class Incremental Learning
+  authors: &id001 []
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Qiu_Dual-Consistency_Model_Inversion_for_Non-Exemplar_Class_Incremental_Learning_CVPR_2024_paper.pdf
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+中文:
+  标题: 非样本类增量学习的双一致性模型反演
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Qiu_Dual-Consistency_Model_Inversion_for_Non-Exemplar_Class_Incremental_Learning_CVPR_2024_paper.pdf
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED

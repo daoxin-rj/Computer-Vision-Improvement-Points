@@ -1,0 +1,20 @@
+English:
+  title: 'Faces that Speak: Jointly Synthesising Talking Face and Speech from Text'
+  authors: &id001 []
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Jang_Faces_that_Speak_Jointly_Synthesising_Talking_Face_and_Speech_from_CVPR_2024_paper.pdf
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+中文:
+  标题: 会说话的面孔：从文本中联合合成会说话的面孔和语音
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Jang_Faces_that_Speak_Jointly_Synthesising_Talking_Face_and_Speech_from_CVPR_2024_paper.pdf
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED

@@ -1,0 +1,21 @@
+English:
+  title: 'Endow SAM with Keen Eyes: Temporal-spatial Prompt Learning for Video Camouflaged
+    Object Detection'
+  authors: &id001 []
+  venue: CVPR
+  year: 2024
+  url: https://openaccess.thecvf.com/content/CVPR2024/papers/Hui_Endow_SAM_with_Keen_Eyes_Temporal-spatial_Prompt_Learning_for_Video_CVPR_2024_paper.pdf
+  code_url: null
+  field: null
+  task: null
+  summary_one_line: NOT_SPECIFIED
+中文:
+  标题: 赋予 SAM 敏锐的洞察力：用于视频伪装目标检测的时空即时学习
+  作者: *id001
+  会议: CVPR
+  年份: 2024
+  链接: https://openaccess.thecvf.com/content/CVPR2024/papers/Hui_Endow_SAM_with_Keen_Eyes_Temporal-spatial_Prompt_Learning_for_Video_CVPR_2024_paper.pdf
+  代码链接: null
+  领域: NOT_SPECIFIED
+  任务: NOT_SPECIFIED
+  一句话总结: NOT_SPECIFIED
